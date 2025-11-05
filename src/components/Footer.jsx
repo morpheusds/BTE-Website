@@ -35,9 +35,9 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-natural-900 text-natural-300 relative overflow-hidden">
+    <footer className="bg-earth-900 text-natural-300 relative overflow-hidden">
       {/* Decorative top border */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-600 via-primary-500 to-primary-600"></div>
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-forest-600 via-forest-500 to-forest-600"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
         {/* Main Footer Content */}
@@ -51,14 +51,14 @@ const Footer = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center">
+                <div className="w-10 h-10 bg-gradient-to-br from-forest-500 to-forest-700 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-xl">B</span>
                 </div>
                 <div className="flex flex-col">
                   <span className="font-display font-bold text-xl leading-tight text-white">
                     BTE
                   </span>
-                  <span className="text-xs font-medium text-primary-400">
+                  <span className="text-xs font-medium text-forest-400">
                     International
                   </span>
                 </div>
@@ -70,11 +70,11 @@ const Footer = () => {
 
               {/* Contact Info */}
               <div className="space-y-3">
-                <a href="mailto:info@bteint.com" className="flex items-center space-x-3 text-natural-400 hover:text-primary-400 transition-colors">
+                <a href="mailto:info@bteint.com" className="flex items-center space-x-3 text-natural-400 hover:text-forest-400 transition-colors">
                   <HiMail className="w-5 h-5 flex-shrink-0" />
                   <span className="text-sm">info@bteint.com</span>
                 </a>
-                <a href="tel:+15551234567" className="flex items-center space-x-3 text-natural-400 hover:text-primary-400 transition-colors">
+                <a href="tel:+15551234567" className="flex items-center space-x-3 text-natural-400 hover:text-forest-400 transition-colors">
                   <HiPhone className="w-5 h-5 flex-shrink-0" />
                   <span className="text-sm">+1 (555) 123-4567</span>
                 </a>
@@ -99,7 +99,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-natural-400 hover:text-primary-400 transition-colors text-sm"
+                    className="text-natural-400 hover:text-forest-400 transition-colors text-sm"
                   >
                     {link.name}
                   </a>
@@ -121,7 +121,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-natural-400 hover:text-primary-400 transition-colors text-sm"
+                    className="text-natural-400 hover:text-forest-400 transition-colors text-sm"
                   >
                     {link.name}
                   </a>
@@ -143,7 +143,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-natural-400 hover:text-primary-400 transition-colors text-sm"
+                    className="text-natural-400 hover:text-forest-400 transition-colors text-sm"
                   >
                     {link.name}
                   </a>
@@ -181,7 +181,7 @@ const Footer = () => {
                   href={social.href}
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 bg-natural-800 rounded-lg flex items-center justify-center text-natural-400 hover:bg-primary-600 hover:text-white transition-all"
+                  className="w-10 h-10 bg-earth-800 rounded-lg flex items-center justify-center text-natural-400 hover:bg-forest-600 hover:text-white transition-all"
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5" />
@@ -197,10 +197,10 @@ const Footer = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="flex items-center space-x-6 text-sm"
             >
-              <a href="#" className="text-natural-500 hover:text-primary-400 transition-colors">
+              <a href="#" className="text-natural-500 hover:text-forest-400 transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-natural-500 hover:text-primary-400 transition-colors">
+              <a href="#" className="text-natural-500 hover:text-forest-400 transition-colors">
                 Terms of Service
               </a>
             </motion.div>

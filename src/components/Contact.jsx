@@ -60,7 +60,7 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" ref={ref} className="py-20 md:py-32 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 relative overflow-hidden">
+    <section id="contact" ref={ref} className="py-20 md:py-32 bg-gradient-to-br from-forest-900 via-forest-800 to-forest-700 relative overflow-hidden">
       {/* Animated background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -82,17 +82,17 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
             className="inline-block mb-4"
           >
-            <span className="px-4 py-2 bg-white/10 backdrop-blur-sm text-primary-100 rounded-full text-sm font-semibold">
+            <span className="px-4 py-2 bg-white/10 backdrop-blur-sm text-forest-100 rounded-full text-sm font-semibold">
               Get in Touch
             </span>
           </motion.div>
 
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6">
             Let's Start a
-            <span className="text-primary-300"> Conversation</span>
+            <span className="text-forest-300"> Conversation</span>
           </h2>
 
-          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
+          <p className="text-xl text-forest-100 max-w-3xl mx-auto">
             Ready to enhance your products with premium natural ingredients?
             Contact us today to discuss your requirements
           </p>
@@ -110,7 +110,7 @@ const Contact = () => {
               <h3 className="font-display text-3xl font-bold text-white mb-6">
                 Contact Information
               </h3>
-              <p className="text-primary-100 text-lg mb-8">
+              <p className="text-forest-100 text-lg mb-8">
                 Our team is here to answer your questions and help you find the perfect
                 ingredients for your business needs.
               </p>
@@ -140,7 +140,7 @@ const Contact = () => {
                         <h4 className="text-lg font-semibold text-white mb-1">
                           {item.title}
                         </h4>
-                        <p className="text-primary-100">
+                        <p className="text-forest-100">
                           {item.info}
                         </p>
                       </div>
@@ -156,7 +156,7 @@ const Contact = () => {
                         <h4 className="text-lg font-semibold text-white mb-1">
                           {item.title}
                         </h4>
-                        <p className="text-primary-100">
+                        <p className="text-forest-100">
                           {item.info}
                         </p>
                       </div>
@@ -180,11 +180,11 @@ const Contact = () => {
                   animate={{ scale: 1 }}
                   className="text-center py-12"
                 >
-                  <HiCheckCircle className="w-20 h-20 text-primary-600 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-natural-900 mb-2">
+                  <HiCheckCircle className="w-20 h-20 text-forest-600 mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold text-earth-900 mb-2">
                     Message Sent!
                   </h3>
-                  <p className="text-natural-600">
+                  <p className="text-earth-600">
                     Thank you for contacting us. We'll get back to you soon.
                   </p>
                 </motion.div>
@@ -192,7 +192,7 @@ const Contact = () => {
                 <>
                   <div className="space-y-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-natural-700 mb-2">
+                      <label htmlFor="name" className="block text-sm font-semibold text-earth-700 mb-2">
                         Full Name *
                       </label>
                       <input
@@ -202,13 +202,13 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-natural-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-natural-300 focus:border-forest-500 focus:ring-2 focus:ring-forest-200 outline-none transition-all"
                         placeholder="John Doe"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-sm font-semibold text-natural-700 mb-2">
+                      <label htmlFor="email" className="block text-sm font-semibold text-earth-700 mb-2">
                         Email Address *
                       </label>
                       <input
@@ -218,14 +218,14 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-natural-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-natural-300 focus:border-forest-500 focus:ring-2 focus:ring-forest-200 outline-none transition-all"
                         placeholder="john@company.com"
                       />
                     </div>
 
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="company" className="block text-sm font-semibold text-natural-700 mb-2">
+                        <label htmlFor="company" className="block text-sm font-semibold text-earth-700 mb-2">
                           Company
                         </label>
                         <input
@@ -234,13 +234,13 @@ const Contact = () => {
                           name="company"
                           value={formData.company}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 rounded-xl border border-natural-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
+                          className="w-full px-4 py-3 rounded-xl border border-natural-300 focus:border-forest-500 focus:ring-2 focus:ring-forest-200 outline-none transition-all"
                           placeholder="Your Company"
                         />
                       </div>
 
                       <div>
-                        <label htmlFor="phone" className="block text-sm font-semibold text-natural-700 mb-2">
+                        <label htmlFor="phone" className="block text-sm font-semibold text-earth-700 mb-2">
                           Phone
                         </label>
                         <input
@@ -249,14 +249,14 @@ const Contact = () => {
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 rounded-xl border border-natural-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
+                          className="w-full px-4 py-3 rounded-xl border border-natural-300 focus:border-forest-500 focus:ring-2 focus:ring-forest-200 outline-none transition-all"
                           placeholder="+1 (555) 123-4567"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-semibold text-natural-700 mb-2">
+                      <label htmlFor="message" className="block text-sm font-semibold text-earth-700 mb-2">
                         Message *
                       </label>
                       <textarea
@@ -266,7 +266,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         rows="5"
-                        className="w-full px-4 py-3 rounded-xl border border-natural-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all resize-none"
+                        className="w-full px-4 py-3 rounded-xl border border-natural-300 focus:border-forest-500 focus:ring-2 focus:ring-forest-200 outline-none transition-all resize-none"
                         placeholder="Tell us about your requirements..."
                       ></textarea>
                     </div>
@@ -276,7 +276,7 @@ const Contact = () => {
                     type="submit"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full mt-6 px-8 py-4 bg-primary-600 text-white rounded-xl font-semibold text-lg hover:bg-primary-700 transition-colors shadow-lg"
+                    className="w-full mt-6 px-8 py-4 bg-forest-600 text-white rounded-xl font-semibold text-lg hover:bg-forest-700 transition-colors shadow-lg"
                   >
                     Send Message
                   </motion.button>

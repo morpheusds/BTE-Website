@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-white text-natural-900 font-sans;
+    @apply bg-natural-50 text-earth-900 font-sans;
   }
 }
 
@@ -28,9 +28,9 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary-600 rounded-full;
+  @apply bg-forest-600 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary-700;
+  @apply bg-forest-700;
 }

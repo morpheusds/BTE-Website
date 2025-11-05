@@ -32,10 +32,10 @@ const Products = () => {
   ]
 
   return (
-    <section id="products" ref={ref} className="py-20 md:py-32 bg-gradient-to-br from-natural-50 via-white to-primary-50 relative overflow-hidden">
+    <section id="products" ref={ref} className="py-20 md:py-32 bg-gradient-to-br from-natural-50 via-white to-forest-50 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-300 rounded-full filter blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-forest-300 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-300 rounded-full filter blur-3xl"></div>
       </div>
 
@@ -53,17 +53,17 @@ const Products = () => {
             transition={{ delay: 0.2 }}
             className="inline-block mb-4"
           >
-            <span className="px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold">
+            <span className="px-4 py-2 bg-forest-100 text-forest-700 rounded-full text-sm font-semibold">
               Our Product Range
             </span>
           </motion.div>
 
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-natural-900 mb-6">
+          <h2 className="font-display text-4xl sm:text-5xl font-bold text-earth-900 mb-6">
             Premium Natural
-            <span className="text-primary-600"> Ingredients</span>
+            <span className="text-forest-600"> Ingredients</span>
           </h2>
 
-          <p className="text-xl text-natural-600 max-w-3xl mx-auto">
+          <p className="text-xl text-earth-600 max-w-3xl mx-auto">
             Discover our comprehensive range of nature identical flavours, premium fruits,
             and authentic herbs - all sourced and processed to the highest standards
           </p>
@@ -108,11 +108,11 @@ const Products = () => {
 
                 {/* Content */}
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-bold text-natural-900 mb-4">
+                  <h3 className="text-2xl font-bold text-earth-900 mb-4">
                     {product.title}
                   </h3>
 
-                  <p className="text-natural-600 mb-6 leading-relaxed">
+                  <p className="text-earth-600 mb-6 leading-relaxed">
                     {product.description}
                   </p>
 
@@ -124,9 +124,9 @@ const Products = () => {
                         initial={{ opacity: 0, x: -20 }}
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
                         transition={{ delay: 0.4 + index * 0.15 + featureIndex * 0.1 }}
-                        className="flex items-center text-natural-700"
+                        className="flex items-center text-earth-700"
                       >
-                        <svg className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-5 h-5 text-forest-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         <span className="text-sm font-medium">{feature}</span>
@@ -140,7 +140,7 @@ const Products = () => {
                     animate={{ opacity: hoveredCard === index ? 1 : 0 }}
                     className="mt-6"
                   >
-                    <a href="#contact" className="text-primary-600 font-semibold hover:text-primary-700 transition-colors inline-flex items-center">
+                    <a href="#contact" className="text-forest-600 font-semibold hover:text-forest-700 transition-colors inline-flex items-center">
                       Learn More
                       <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -160,17 +160,17 @@ const Products = () => {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="mt-16 text-center"
         >
-          <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-8 md:p-12 shadow-2xl">
+          <div className="bg-gradient-to-r from-forest-600 to-forest-700 rounded-3xl p-8 md:p-12 shadow-2xl">
             <h3 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
               Need a Custom Solution?
             </h3>
-            <p className="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-forest-100 text-lg mb-8 max-w-2xl mx-auto">
               Our team of experts can develop tailored products to meet your specific requirements.
               Let's discuss how we can support your business.
             </p>
             <a
               href="#contact"
-              className="inline-block px-8 py-4 bg-white text-primary-700 rounded-full font-semibold text-lg hover:bg-primary-50 transition-all hover:scale-105 shadow-lg"
+              className="inline-block px-8 py-4 bg-white text-forest-700 rounded-full font-semibold text-lg hover:bg-forest-50 transition-all hover:scale-105 shadow-lg"
             >
               Get in Touch
             </a>
