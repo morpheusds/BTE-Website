@@ -85,7 +85,7 @@ const Values = () => {
               whileHover={{ scale: 1.02 }}
               className="group"
             >
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-sage-100 hover:shadow-2xl transition-all h-full">
+              <div className="">
                 <motion.div
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}

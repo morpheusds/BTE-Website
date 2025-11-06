@@ -173,7 +173,7 @@ const Contact = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-8 shadow-2xl">
+            <form onSubmit={handleSubmit} className="">
               {isSubmitted ? (
                 <motion.div
                   initial={{ scale: 0 }}
